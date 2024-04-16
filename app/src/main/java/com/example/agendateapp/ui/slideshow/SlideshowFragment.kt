@@ -11,7 +11,7 @@ import com.example.agendateapp.databinding.FragmentSlideshowBinding
 
 class SlideshowFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+        private var _binding: FragmentSlideshowBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.

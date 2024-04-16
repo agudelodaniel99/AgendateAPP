@@ -7,15 +7,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/person24"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person24"
             android:title="Perfil" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/groups24"
             android:title="Profesionales" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/calendarmonth24"
             android:title="Gestionar Citas" />
     </group>
 
