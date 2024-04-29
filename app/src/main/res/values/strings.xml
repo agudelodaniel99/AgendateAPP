@@ -22,4 +22,12 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_usuario">Nombre</string>
+    <string name="correo_usuario">Correo</string>
+    <string name="ciudad_usuario">Ciudad</string>
+    <string name="direccion_usuario">Direccón</string>
+    <string name="telefono_usuario">Telefono</string>
+    <string name="clave_usuario">Clave</string>
+
+
 </resources>
