@@ -28,4 +28,10 @@
         android:name="com.example.agendateapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/url_sitio"
+        android:name="com.example.agendateapp.UrlSitio"
+        android:label="@string/url_sitio"
+        tools:layout="@layout/fragment_url_sitio" />
 </navigation>

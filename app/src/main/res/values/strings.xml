@@ -11,6 +11,8 @@
     <string name="menu_profile">Perfil</string>
     <string name="menu_gallery">Profesionales</string>
     <string name="menu_slideshow">Citas</string>
+    <string name="url_sitio">Ir a Web</string>
+
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
