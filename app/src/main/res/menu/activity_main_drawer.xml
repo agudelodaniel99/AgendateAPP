@@ -21,6 +21,11 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/calendarmonth24"
             android:title="Gestionar Citas" />
+
+        <item
+            android:id="@+id/url_sitio"
+            android:icon="@drawable/calendarmonth24"
+            android:title="Ir a Web" />
     </group>
 
 </menu>
