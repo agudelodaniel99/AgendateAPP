@@ -16,7 +16,6 @@ import android.widget.Toast
 import com.example.agendateapp.ListViewAdapter
 import com.example.agendateapp.R
 import com.example.agendateapp.data.model.ProfesionalesListViewModel
-import com.example.agendateapp.databinding.FragmentGalleryBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

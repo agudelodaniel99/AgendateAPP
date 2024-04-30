@@ -43,7 +43,7 @@ class ListViewAdapter(
             // Aquí puedes crear y abrir un nuevo fragmento
             val fragment = VerProfesionales()
             val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.host, fragment)
+            transaction.replace(R.id.host1, fragment)
             transaction.addToBackStack(null)  // Opcional: agregar a la pila de retroceso
             transaction.commit()
 
