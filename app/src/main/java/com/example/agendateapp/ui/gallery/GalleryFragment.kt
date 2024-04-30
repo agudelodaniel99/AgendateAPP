@@ -10,6 +10,7 @@ import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.agendateapp.ListViewAdapter
 import com.example.agendateapp.R
 import com.example.agendateapp.data.model.ProfesionalesListViewModel
@@ -50,7 +51,11 @@ class GalleryFragment : Fragment() {
 
         val listaProfesionales  = listOf(profesional,profesional1,profesional2)
 
-        val adapter = ListViewAdapter(requireContext(),listaProfesionales)
+        val adapter = ListViewAdapter(
+            fragmentManager = childFragmentManager,
+            mcontext = requireContext(),
+            listaProfesionales = listaProfesionales
+        )
         listView.adapter = adapter
 
         textView.setText("Lista de Profesionales")
