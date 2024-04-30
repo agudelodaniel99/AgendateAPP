@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.example.agendateapp.data.model.CitasListViewModel
 
 
@@ -24,6 +25,13 @@ class CitasListViewAdapter(private val mcontext : Context, private val citasList
         val hora = layout.findViewById<TextView>(R.id.hora)
         hora.text = profesional.Hora
 
+        layout.findViewById<View>(R.id.editar).setOnClickListener {
+            Toast.makeText(context, "image view clicked editar pos=$position", Toast.LENGTH_SHORT).show()
+        }
+
+        layout.findViewById<View>(R.id.eliminar).setOnClickListener {
+            Toast.makeText(context, "image view clicked eliminar pos=$position", Toast.LENGTH_SHORT).show()
+        }
         return  layout
     }
 }

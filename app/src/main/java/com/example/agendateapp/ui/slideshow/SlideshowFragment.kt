@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.agendateapp.CitasListViewAdapter
@@ -36,18 +38,21 @@ class SlideshowFragment : Fragment() {
 
 
         val citas = CitasListViewModel("2024-04-29","14:00",R.drawable.userprofile64,R.drawable.userprofile64)
-        val citas1 = CitasListViewModel("2024-04-29","14:00",R.drawable.userprofile64,R.drawable.userprofile64)
-        val citas2 = CitasListViewModel("2024-04-29","14:00",R.drawable.userprofile64,R.drawable.userprofile64)
+        val citas1 = CitasListViewModel("2024-05-15","12:00",R.drawable.userprofile64,R.drawable.userprofile64)
+        val citas2 = CitasListViewModel("2024-05-22","11:00",R.drawable.userprofile64,R.drawable.userprofile64)
 
         val listaCitas  = listOf(citas,citas1,citas2)
-
         val adapter = CitasListViewAdapter(requireContext(),listaCitas)
         listView.adapter = adapter
-
         textView.setText("Gestión de Citas")
-
         textView1.setText("Daniel Agudelo Mazo")
 
+        listView.setOnItemClickListener { parent, view, position, id ->
+
+            //I tried you use comented line to solwe my problem
+            //view.imageViewButton.setOnClickListener { Toast.makeText(this, "button $position is clicked",Toast.LENGTH_SHORT).show() }
+            Toast.makeText(this.requireContext(), "not button clicked, $position works correctly", Toast.LENGTH_SHORT).show()
+        }
         return  view
     }
 
